@@ -30,6 +30,12 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 | CSM Support | YES |
 | Boot Mode | Quick |
 
+### Bios
+These are the recommended settings to have everything working properly:
+- `Security Chip > Security Chip [Disabled]`
+- `Anti-Theft > Intel (R) AT Module Activation > Current Setting [Disabled]`
+- `Anti-Theft > Computrace > Computrace Module Activation > Current Setting [Disabled]`
+
 ### 3. Creating a bootable usb
 
 Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
@@ -40,7 +46,7 @@ Open up and extract the EFI folder archive you downloaded earlier.
 
 Copy the folder named, "EFI," to the root of your USB Drive.
 
-### MacRecovery
+### 4. MacRecovery
 
 First grab a copy of [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases) and head to /Utilities/macrecovery/. Next copy the folder path for the macrecovery folder.
 From here, you'll want to open up a Command Prompt and cd into the macrecovery folder that we copied earlier:
@@ -72,12 +78,6 @@ macOS 12 and above note: As recent macOS versions introduce changes to the USB s
 - FingerPrint Reader
 - Docking Station Kernel Panic if `Sleep, Reboot, Shutdown` attempted while external display connected on one of the Dock Ports
 - Docking Station DisplayPort Audio
-
-### Bios
-These are the recommended settings to have everything working properly:
-- `Security Chip > Security Chip [Disabled]`
-- `Anti-Theft > Intel (R) AT Module Activation > Current Setting [Disabled]`
-- `Anti-Theft > Computrace > Computrace Module Activation > Current Setting [Disabled]`
 
 **Note**: These laptops do have whitelist which doesn't allow you to use other Card than the Intel AC7260.
 In order to use a different / supported card, you need to mod your bios (remove whitelist) or downgrade to Bios v2.36
