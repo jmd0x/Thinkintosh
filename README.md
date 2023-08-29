@@ -131,10 +131,13 @@ You can specify other country codes like: **US**, **CN**, **#a**, etc by going i
 - `EFI/OC/Config.plist > DeviceProperties > Add > PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)` and rename/uncomment:
 - `#country-code` to `country-code` and set the desired value (**#a** is the preset value, replace with the country code that you need)
 
-#### Installed and unmounted
-After you've installed macos on your thinkintosh, you might notice that if you try to restart without having your usb connected your system wont boot. 
+#### Installed and unmounted 
+after you've installed macos on your thinkintosh, you might notice that if you try to restart without having your usb connected your system wont boot. 
 To solve this you need to mount your EFI patition to your desktop so system can boot automatically.
--
+
+#### Command Line EFI Mounter
+
+
 
 - [zhen-zen](https://github.com/zhen-zen) for **YogaSMC** and **BrightnessKeys**
 - [benbender](https://github.com/benbender) for **SSDT-BATX**, **Touchscreen Gestures** and **ACPI refinements**
