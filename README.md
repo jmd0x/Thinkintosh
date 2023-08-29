@@ -17,7 +17,9 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 ### MacRecovery
 To grab legacy installers is super easy, first grab a copy of OpenCorePkg and head to /Utilities/macrecovery/. Next copy the folder path for the macrecovery folder.
 From here, you'll want to open up a Command Prompt and cd into the macrecovery folder that we copied earlier:
+
 - `cd Paste_Folder_Path`
+
 Now run one of the following depending on what version of macOS you want(Note these scripts rely on Python support, please install if you haven't already):
 
 `# Mojave (10.14)
