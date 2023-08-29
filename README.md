@@ -6,14 +6,15 @@ This is a write up on how to hackintosh the Lenovo Thinkpad T440s
 
 Lenovo Thinkpad T440S using OpenCore Bootloader
 
-### Specs:
-- Lenovo ThinkPad T440s
-- CPU: i5-4300U
-- GPU: Intel HD Graphics 4400
-- Intel Dual Band Wireless-AC 7260 Model: 7260NGW
-- RAM: 12GB 1600MHz DDR3
-- First SSD: 512GB
-- Secondary SSD: 16GB
+### 1. Specs:
+| Specifications      | Detail                                      |
+| ------------------- | ------------------------------------------- |
+| Processor           | Intel Core i5-4300U                         |
+| Integrated Graphics | Intel HD Graphics 4400                      |
+| Wireless      | Intel Dual Band Wireless-AC 7260 Model: 7260NGW   |
+| RAM | 12GB 1600MHz DDR3 |
+| First SSD | 512GB |
+| Secondary SSD | 16GB |
 
 
 ### 2. BIOS settings
@@ -29,7 +30,7 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 | CSM Support | YES |
 | Boot Mode | Quick |
 
-### Creating a bootable usb
+### 3. Creating a bootable usb
 
 Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
 
