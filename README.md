@@ -11,8 +11,8 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 - CPU: i5-4300U
 - GPU: Intel HD Graphics 4400
 - RAM: 12GB 1600MHz DDR3
-- SSD: 512GB
-- SSD: 16GB
+- First SSD: 512GB
+- Secondary SSD: 16GB
 
 ### Creating a bootable usb
 
