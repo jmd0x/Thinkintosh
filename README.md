@@ -111,11 +111,9 @@ Once done, enable the VoodooPS2Controller kexts for Touchpad:
 Now enable the `SSDT-TPD.aml` for Touchpad to work with VoodooPS2:  
 - `EFI/OC/Config.plist > ACPI > Add > SSDT-TPD.aml > Enabled = Yes`
 
-### 9. YogaSMC
+### 9. [YogaSMC](https://github.com/zhen-zen/YogaSMC)
 To have working Keyboard Function Keys (Fn) and Fan reading etc, you need to install the YogaSMCPane and the YogaSMC App.
 YogaSMC.kext is already included in the EFI so when yo go to releases tab, you download the **YogaSMC-App-release.dmg**
-- https://github.com/zhen-zen/YogaSMC
-
 
 ### 10. Audio
 ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74 released a Swift version that doesn't require `hda-verb`, `alc-verb` or `CodecCommander` kext. the [ALCPlugFix.zip](https://github.com/jmd0x/thinkintosh/blob/main/Tools/ALCPlugFix.zip) is included in the Tools folder.
@@ -133,7 +131,6 @@ ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74
 - Now type: `/usr/local/bin/`
 - Drag the `ALC3232.plist` from the `/usr/local/bin` folder into the terminal window and press enter.
 - Done
-
 
 ### 11. Wireless and Bluetooth
 
