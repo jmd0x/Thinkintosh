@@ -10,6 +10,7 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 - Lenovo ThinkPad T440s
 - CPU: i5-4300U
 - GPU: Intel HD Graphics 4400
+- Intel Dual Band Wireless-AC 7260 Model: 7260NGW
 - RAM: 12GB 1600MHz DDR3
 - First SSD: 512GB
 - Secondary SSD: 16GB
