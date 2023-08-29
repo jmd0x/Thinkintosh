@@ -82,7 +82,10 @@ Users with `1366x768` or `1600x900` displays can go ahead and enable secure boot
 Users with upgraded displays to `1080p` or native `1080p` displays will have garbled screen if CSM is disabled in BIOS (which can't be left enabled if Secure Boot enabled)
 In order to fix this problem we need to patch `Display-EDID`.
 
-### 7. Non TouchScreen Displays
+### 7. [ProperTree](https://github.com/corpnewt/ProperTree)
+what is ProperTree? Propertree is a cross-platform GUI plist editor written using Python and Tkinter.
+
+### 8. Non TouchScreen Displays
 If your Lenovo Thinkpad T440S doesn't have a TouchScreen display, it is required for you to disable the kext responsible for TouchScreen.
 Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
 - `VoodooI2CServices.kext - Enabled = No`
@@ -90,7 +93,7 @@ Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
 - `VoodooI2C.kext - Enabled = No`
 - `VoodooI2CHID.kext - Enabled = No`
 
-### 8. TouchPad
+### 9. TouchPad
 Most of the users have probably already upgraded to a T450S Touchpad (the one with Physical Buttons) and this one does work natively, no need to touch anything.
 For you users that have the standard Touchpad that came with this laptop, you have to do some changes as VoodooRMI doesn't seem to work very well with them.
 
@@ -109,11 +112,11 @@ Once done, enable the VoodooPS2Controller kexts for Touchpad:
 Now enable the `SSDT-TPD.aml` for Touchpad to work with VoodooPS2:  
 - `EFI/OC/Config.plist > ACPI > Add > SSDT-TPD.aml > Enabled = Yes`
 
-### 9. [YogaSMC](https://github.com/zhen-zen/YogaSMC)
+### 10. [YogaSMC](https://github.com/zhen-zen/YogaSMC)
 To have working Keyboard Function Keys (Fn) and Fan reading etc, you need to install the YogaSMCPane and the YogaSMC App.
 YogaSMC.kext is already included in the EFI so when you go to releases tab, you download the **YogaSMC-App-release.dmg**
 
-### 10. Audio
+### 11. Audio
 ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74 released a Swift version that doesn't require `hda-verb`, `alc-verb` or `CodecCommander` kext. the [ALCPlugFix.zip](https://github.com/jmd0x/thinkintosh/blob/main/Tools/ALCPlugFix.zip) is included in the Tools folder.
 
 **Installation**:
@@ -130,7 +133,7 @@ ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74
 - Drag the `ALC3232.plist` from the `/usr/local/bin` folder into the terminal window and press enter.
 - Done
 
-### 11. Wireless and Bluetooth
+### 12. Wireless and Bluetooth
 
 #### Intel AC7260
 Users with Intel AC7260 cards can enjoy out of the box support for both Wireless and Bluetooth.
@@ -168,17 +171,17 @@ This is the native Apple Wireless and Bluetooth card that can be found on MacBoo
 In order to fit this one you will have to buy the NGFF adapter and the extending cable module.
 There is not enough room to fit the full height so you will be required to place it somewhere else.
 
-#### 12. Country Code for Wireless Cards
+#### 13. Country Code for Wireless Cards
 Some countries have different 5GHz bands and may not be supported for some, the default one is set as US.
 You can specify other country codes like: **US**, **CN**, **#a**, etc by going into:
 - `EFI/OC/Config.plist > DeviceProperties > Add > PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)` and rename/uncomment:
 - `#country-code` to `country-code` and set the desired value (**#a** is the preset value, replace with the country code that you need)
 
-#### 13. Installed and unmounted 
+#### 14. Installed and unmounted 
 after you've installed macos on your thinkintosh, you might notice that if you try to restart without having your usb connected your system wont boot. 
 To solve this you need to mount your EFI patition to your desktop so system can boot automatically.
 
-#### 14. [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
+#### 15. [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
 After running the command line tool, you'll want to mount the EFI partition from your main drive that you installed macOS on and copy the folder you have on your USB called EFI and copy and paste it to that partiton that appears on your desktop.
 
 
