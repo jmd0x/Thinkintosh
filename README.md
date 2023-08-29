@@ -21,7 +21,7 @@ From here, you'll want to open up a Command Prompt and cd into the macrecovery f
 - `cd Paste_Folder_Path`
 
 Now run one of the following depending on what version of macOS you want.
-(Note these scripts rely on Python support, please install if you haven't already):
+(Note these scripts rely on [Python](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7?activetab=pivot:overviewtab) support, please install if you haven't already):
 
 `# Mojave (10.14)
 python macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00 download`
