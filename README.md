@@ -159,7 +159,8 @@ This card uses the same kexts as DW1560, DW1830 but needs this additional inject
 
 We also need to disable `pci-aspm-default` to fix system freezes caused from this card:
 Go into `EFI/OC/Config.plist > DeviceProperties >` and rename / uncomment:
-- `#PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)` to `PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)` and the device property:
+- `#PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)` to `PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)`
+- Go into the device property and rename:
 - `#pci-aspm-default` to `pci-aspm-default`
 
 #### BCM4360NG
