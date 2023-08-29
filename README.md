@@ -18,7 +18,7 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 
 
 ### 2. BIOS settings
-
+These are the recommended settings to have everything working properly:
 | Item | Setting |
 | ------------- | ------------ |
 | Security Chip | Disabled |
@@ -29,12 +29,9 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 | UEFI/Legacy Boot | UEFI Only |
 | CSM Support | YES |
 | Boot Mode | Quick |
-
-### Bios
-These are the recommended settings to have everything working properly:
-- `Security Chip > Security Chip [Disabled]`
-- `Anti-Theft > Intel (R) AT Module Activation > Current Setting [Disabled]`
-- `Anti-Theft > Computrace > Computrace Module Activation > Current Setting [Disabled]`
+| Security Chip | Security Chip [Disabled] |
+|Anti-Theft > Intel (R) AT Module Activation | Current Setting [Disabled] |
+| Anti-Theft > Computrace > Computrace Module Activation | Current Setting [Disabled] |
 
 ### 3. Creating a bootable usb
 
