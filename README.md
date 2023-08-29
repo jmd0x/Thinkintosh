@@ -6,7 +6,7 @@ This is a write up on how to hackintosh the Lenovo Thinkpad T440s
 
 Lenovo Thinkpad T440S using OpenCore Bootloader
 
-### What specs:
+### Specs:
 - Lenovo ThinkPad T440s
 - CPU: i5-4300U
 - GPU: Intel HD Graphics 4400
@@ -20,7 +20,8 @@ From here, you'll want to open up a Command Prompt and cd into the macrecovery f
 
 - `cd Paste_Folder_Path`
 
-Now run one of the following depending on what version of macOS you want(Note these scripts rely on Python support, please install if you haven't already):
+Now run one of the following depending on what version of macOS you want.
+(Note these scripts rely on Python support, please install if you haven't already):
 
 `# Mojave (10.14)
 python macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00 download`
