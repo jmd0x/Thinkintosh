@@ -34,8 +34,8 @@ These are the recommended settings to have everything working properly:
 
 Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
 
-- Next, go to the root of this USB drive and create a folder called com.apple.recovery.boot. Then move the downloaded BaseSystem or RecoveryImage files.
-- Please ensure you copy over both the .dmg and .chunklist files to this folder:
+- `Next, go to the root of this USB drive and create a folder called com.apple.recovery.boot. Then move the downloaded BaseSystem or RecoveryImage files.`
+- `Please ensure you copy over both the .dmg and .chunklist files to this folder:`
 - `Open up and extract the EFI folder archive you downloaded earlier.`
 - `Copy the folder named, "EFI," to the root of your USB Drive.`
 
@@ -67,14 +67,14 @@ python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download`
 macOS 12 and above note: As recent macOS versions introduce changes to the USB stack, it is highly advisable that you map your USB ports (with USBToolBox) before installing macOS.This will take some time, however once you're finished you should get either BaseSystem or RecoveryImage files:
 
 ### 5. What doesn't work:
-- DRM content
-- FingerPrint Reader
-- Docking Station Kernel Panic if `Sleep, Reboot, Shutdown` attempted while external display connected on one of the Dock Ports
-- Docking Station DisplayPort Audio
+- `DRM content`
+- `FingerPrint Reader`
+- `Docking Station Kernel Panic if "Sleep, Reboot, Shutdown" attempted while external display connected on one of the Dock Ports`
+- `Docking Station DisplayPort Audio`
 
 **Note**: These laptops do have whitelist which doesn't allow you to use other Card than the Intel AC7260.
 In order to use a different / supported card, you need to mod your bios (remove whitelist) or downgrade to Bios v2.36
-- Bios v2.36 doesn't have whitelist so downgrading allows you to use any wireless card that you want.
+- `Bios v2.36 doesn't have whitelist so downgrading allows you to use any wireless card that you want.`
 
 ### 6. Secure Boot
 Users with `1366x768` or `1600x900` displays can go ahead and enable secure boot and enjoy it.
