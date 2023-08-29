@@ -15,6 +15,20 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 - First SSD: 512GB
 - Secondary SSD: 16GB
 
+
+### 2. BIOS settings
+
+| Item | Setting |
+| ------------- | ------------ |
+| Security Chip | Disabled |
+| Memory Protection Execution Prevention | Enabled |
+| Virtualization | Enabled |
+| Fingerprint Reader | Disabled |
+| Secure Boot | Disabled |
+| UEFI/Legacy Boot | UEFI Only |
+| CSM Support | YES |
+| Boot Mode | Quick |
+
 ### Creating a bootable usb
 
 Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
