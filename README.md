@@ -14,7 +14,18 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 - SSD: 512GB
 - SSD: 16GB
 
+### Creating a bootable usb
+
+Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
+
+Next, go to the root of this USB drive and create a folder called com.apple.recovery.boot. Then move the downloaded BaseSystem or RecoveryImage files. Please ensure you copy over both the .dmg and .chunklist files to this folder:
+
+Open up and extract the EFI folder archive you downloaded earlier.
+
+Copy the folder named, "EFI," to the root of your USB Drive.
+
 ### MacRecovery
+
 First grab a copy of [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases) and head to /Utilities/macrecovery/. Next copy the folder path for the macrecovery folder.
 From here, you'll want to open up a Command Prompt and cd into the macrecovery folder that we copied earlier:
 
@@ -39,16 +50,6 @@ python macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download`
 python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download`
 
 macOS 12 and above note: As recent macOS versions introduce changes to the USB stack, it is highly advisable that you map your USB ports (with USBToolBox) before installing macOS.This will take some time, however once you're finished you should get either BaseSystem or RecoveryImage files:
-
-### Creating a bootable usb
-
-Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
-
-Next, go to the root of this USB drive and create a folder called com.apple.recovery.boot. Then move the downloaded BaseSystem or RecoveryImage files. Please ensure you copy over both the .dmg and .chunklist files to this folder:
-
-Open up and extract the EFI folder archive you downloaded earlier.
-
-Copy the folder named, "EFI," to the root of your USB Drive.
 
 ### What doesn't work:
 - DRM content
