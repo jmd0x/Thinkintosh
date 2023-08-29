@@ -29,8 +29,8 @@ These are the recommended settings to have everything working properly:
 | UEFI/Legacy Boot | UEFI Only |
 | CSM Support | YES |
 | Boot Mode | Quick |
-|Anti-Theft > Intel (R) AT Module Activation | Current Setting [Disabled] |
-| Anti-Theft > Computrace > Computrace Module Activation | Current Setting [Disabled] |
+|Anti-Theft > Intel (R) AT Module Activation | Disabled |
+| Anti-Theft > Computrace > Computrace Module Activation | Disabled |
 
 ### 3. Creating a bootable usb
 
