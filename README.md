@@ -32,7 +32,7 @@ These are the recommended settings to have everything working properly:
 
 ### 3. Creating a bootable usb
 
-Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
+First download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
 
 - `Next, go to the root of this USB drive and create a folder called com.apple.recovery.boot. Then move the downloaded BaseSystem or RecoveryImage files.`
 - `Please ensure you copy over both the .dmg and .chunklist files to this folder:`
@@ -41,7 +41,7 @@ Download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, 
 
 ### 4. MacRecovery
 
-First grab a copy of [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases) and head to /Utilities/macrecovery/. Next copy the folder path for the macrecovery folder.
+Second, grab a copy of [OpenCorePkg](https://github.com/acidanthera/OpenCorePkg/releases) and head to /Utilities/macrecovery/. Next copy the folder path for the macrecovery folder.
 From here, you'll want to open up a Command Prompt and cd into the macrecovery folder that we copied earlier:
 
 - `cd Paste_Folder_Path`
