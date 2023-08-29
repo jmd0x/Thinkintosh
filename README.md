@@ -184,5 +184,5 @@ To solve this you need to mount your EFI patition to your desktop so system can 
 After running the command line tool, you'll want to mount the EFI partition from your main drive that you installed macOS on and copy the folder you have on your USB called EFI and copy and paste it to that partiton that appears on your desktop.
 
 
-- [zhen-zen](https://github.com/zhen-zen) `for **YogaSMC** and **BrightnessKeys**`
-- [benbender](https://github.com/benbender) `for **SSDT-BATX**, **Touchscreen Gestures** and **ACPI refinements**`
+- [zhen-zen](https://github.com/zhen-zen) `for YogaSMC and BrightnessKeys`
+- [benbender](https://github.com/benbender) `for SSDT-BATX**, Touchscreen Gestures and ACPI refinements`
