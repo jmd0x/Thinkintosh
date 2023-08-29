@@ -14,6 +14,42 @@ Lenovo Thinkpad T440S using OpenCore Bootloader
 - SSD: 512GB
 - SSD: 16GB
 
+### MacRecovery
+To grab legacy installers is super easy, first grab a copy of OpenCorePkg and head to /Utilities/macrecovery/. Next copy the folder path for the macrecovery folder.
+From here, you'll want to open up a Command Prompt and cd into the macrecovery folder that we copied earlier:
+- `cd Paste_Folder_Path`
+Now run one of the following depending on what version of macOS you want(Note these scripts rely on Python support, please install if you haven't already):
+
+# Mojave (10.14)
+python macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00 download
+
+# Catalina (10.15)
+python macrecovery.py -b Mac-00BE6ED71E35EB86 -m 00000000000000000 download
+
+# Big Sur (11)
+python macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download
+
+# Monterey (12)
+python macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download
+
+# Ventura (13) (Work in progress)
+python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download
+
+macOS 12 and above note: As recent macOS versions introduce changes to the USB stack, it is highly advisable that you map your USB ports (with USBToolBox) before installing macOS.This will take some time, however once you're finished you should get either BaseSystem or RecoveryImage files:
+
+### Creating a bootable usb
+
+Download Rufus, set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
+
+Next, go to the root of this USB drive and create a folder called com.apple.recovery.boot. Then move the downloaded BaseSystem or RecoveryImage files. Please ensure you copy over both the .dmg and .chunklist files to this folder:
+
+Open up and extract the EFI folder archive you downloaded earlier.
+
+Copy the folder named, "EFI," to the root of your USB Drive.
+
+Restart your computer.
+
+
 ### What doesn't work:
 - DRM content
 - FingerPrint Reader
@@ -29,7 +65,6 @@ These are the recommended settings to have everything working properly:
 **Note**: These laptops do have whitelist which doesn't allow you to use other Card than the Intel AC7260.
 In order to use a different / supported card, you need to mod your bios (remove whitelist) or downgrade to Bios v2.36
 - Bios v2.36 doesn't have whitelist so downgrading allows you to use any wireless card that you want.
-
 
 ### Secure Boot
 Users with `1366x768` or `1600x900` displays can go ahead and enable secure boot and enjoy it.
