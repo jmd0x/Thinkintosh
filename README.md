@@ -118,7 +118,7 @@ YogaSMC.kext is already included in the EFI so when yo go to releases tab, you d
 
 
 ### 10. Audio
-ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74 released a Swift version that doesn't require `hda-verb`, `alc-verb` or `CodecCommander` kext. the `ALCPlugFix.zip` is included in the Tools folder.
+ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74 released a Swift version that doesn't require `hda-verb`, `alc-verb` or `CodecCommander` kext. the [ALCPlugFix.zip](https://github.com/jmd0x/thinkintosh/blob/main/Tools/ALCPlugFix.zip) is included in the Tools folder.
 
 **Installation**:
 - Extract ALCPlugFix zip into desktop
