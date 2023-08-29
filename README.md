@@ -20,20 +20,20 @@ From here, you'll want to open up a Command Prompt and cd into the macrecovery f
 - `cd Paste_Folder_Path`
 Now run one of the following depending on what version of macOS you want(Note these scripts rely on Python support, please install if you haven't already):
 
-# Mojave (10.14)
-python macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00 download
+`# Mojave (10.14)
+python macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00 download`
 
-# Catalina (10.15)
-python macrecovery.py -b Mac-00BE6ED71E35EB86 -m 00000000000000000 download
+`# Catalina (10.15)
+python macrecovery.py -b Mac-00BE6ED71E35EB86 -m 00000000000000000 download`
 
-# Big Sur (11)
-python macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download
+`# Big Sur (11)
+python macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download`
 
-# Monterey (12)
-python macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download
+`# Monterey (12)
+python macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download`
 
-# Ventura (13) (Work in progress)
-python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download
+`# Ventura (13) (Work in progress)
+python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download`
 
 macOS 12 and above note: As recent macOS versions introduce changes to the USB stack, it is highly advisable that you map your USB ports (with USBToolBox) before installing macOS.This will take some time, however once you're finished you should get either BaseSystem or RecoveryImage files:
 
@@ -46,9 +46,6 @@ Next, go to the root of this USB drive and create a folder called com.apple.reco
 Open up and extract the EFI folder archive you downloaded earlier.
 
 Copy the folder named, "EFI," to the root of your USB Drive.
-
-Restart your computer.
-
 
 ### What doesn't work:
 - DRM content
@@ -170,7 +167,7 @@ You can specify other country codes like: **US**, **CN**, **#a**, etc by going i
 after you've installed macos on your thinkintosh, you might notice that if you try to restart without having your usb connected your system wont boot. 
 To solve this you need to mount your EFI patition to your desktop so system can boot automatically.
 
-#### Command Line EFI Mounter
+#### [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
 After running the command line tool, you'll wanna mount the EFI partition from your main drive that you installed macOS on and copy the folder  you have on your USB called EFI and copy and paste it to that partiton that appears on your desktop.
 
 
