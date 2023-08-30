@@ -192,4 +192,4 @@ To solve this you need to mount your EFI patition to your desktop so system can 
 - Once the EFI partition is mounted copy the folder you have on your USB called EFI and paste it to that partiton that appears on your desktop.
 
 #### Questions
-For any follow up questions feel free to contact me on twitter/X [jmd0x](https://twitter.com/jmd0x)
+For any follow up questions feel free to contact me on twitter/X : @[jmd0x](https://twitter.com/jmd0x)
