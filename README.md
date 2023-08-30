@@ -30,6 +30,12 @@ These are the recommended settings to have everything working properly:
 |Anti-Theft > Intel (R) AT Module Activation | Disabled |
 | Anti-Theft > Computrace > Computrace Module Activation | Disabled |
 
+### What doesn't work:
+- `DRM content`
+- `FingerPrint Reader`
+- `Docking Station Kernel Panic if "Sleep, Reboot, Shutdown" attempted while external display connected on one of the Dock Ports`
+- `Docking Station DisplayPort Audio`
+
 ### 1. Creating a bootable usb
 
 First download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set the File System as FAT32, click Start, and delete all file autorun in USB Drive partition.
@@ -66,26 +72,20 @@ Now run one of the following depending on what version of macOS you want.
 
 macOS 12 and above note: As recent macOS versions introduce changes to the USB stack, it is highly advisable that you map your USB ports [USBToolBox](https://github.com/USBToolBox/tool) before installing macOS.This will take some time, however once you're finished you should get either BaseSystem or RecoveryImage files:
 
-### 3. What doesn't work:
-- `DRM content`
-- `FingerPrint Reader`
-- `Docking Station Kernel Panic if "Sleep, Reboot, Shutdown" attempted while external display connected on one of the Dock Ports`
-- `Docking Station DisplayPort Audio`
-
 **Note**: These laptops do have whitelist which doesn't allow you to use other Card than the Intel AC7260.
 In order to use a different / supported card, you need to mod your bios (remove whitelist) or downgrade to Bios v2.36
 - `Bios v2.36 doesn't have whitelist so downgrading allows you to use any wireless card that you want.`
 
-### 4. Secure Boot
+### 3. Secure Boot
 Users with `1366x768` or `1600x900` displays can go ahead and enable secure boot and enjoy it.
 Users with upgraded displays to `1080p` or native `1080p` displays will have garbled screen if CSM is disabled in BIOS (which can't be left enabled if Secure Boot enabled)
 In order to fix this problem we need to patch `Display-EDID`.
 
-### 5. [ProperTree](https://github.com/corpnewt/ProperTree)
+### 4. [ProperTree](https://github.com/corpnewt/ProperTree)
 what is ProperTree? Propertree is a cross-platform GUI plist editor written using Python and Tkinter.
 To make changes to your `config.plist` this program will be what you'll have to use.
 
-### 6. Non TouchScreen Displays
+### 5. Non TouchScreen Displays
 If your Lenovo Thinkpad T440S doesn't have a TouchScreen display, it is required for you to disable the kext responsible for TouchScreen.
 Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
 - `VoodooI2CServices.kext - Enabled = No`
@@ -93,7 +93,7 @@ Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
 - `VoodooI2C.kext - Enabled = No`
 - `VoodooI2CHID.kext - Enabled = No`
 
-### 7. TouchPad
+### 6. TouchPad
 Most of the users have probably already upgraded to a T450S Touchpad (the one with Physical Buttons) and this one does work natively, no need to touch anything.
 For you users that have the standard Touchpad that came with this laptop, you have to do some changes as VoodooRMI doesn't seem to work very well with them.
 
@@ -112,14 +112,14 @@ Once done, enable the VoodooPS2Controller kexts for Touchpad:
 Now enable the `SSDT-TPD.aml` for Touchpad to work with VoodooPS2:  
 - `EFI/OC/Config.plist > ACPI > Add > SSDT-TPD.aml > Enabled = Yes`
 
-### 8. [YogaSMC](https://github.com/zhen-zen/YogaSMC)
+### 7. [YogaSMC](https://github.com/zhen-zen/YogaSMC)
 To have working Keyboard Function Keys (Fn) and Fan reading etc, you need to install the YogaSMCPane and the YogaSMC App.
 YogaSMC.kext is already included in the EFI so when you go to releases tab, you download the **YogaSMC-App-release.dmg**
 
 - [zhen-zen](https://github.com/zhen-zen) `for YogaSMC and BrightnessKeys`
 - [benbender](https://github.com/benbender) `for SSDT-BATX**, Touchscreen Gestures and ACPI refinements`
 
-### 9. Audio
+### 8. Audio
 ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74 released a Swift version that doesn't require `hda-verb`, `alc-verb` or `CodecCommander` kext. the [ALCPlugFix.zip](https://github.com/jmd0x/thinkintosh/blob/main/Tools/ALCPlugFix.zip) is included in the Tools folder.
 
 **Installation**:
@@ -136,7 +136,7 @@ ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74
 - Drag the `ALC3232.plist` from the `/usr/local/bin` folder into the terminal window and press enter.
 - Done
 
-### 10. Wireless and Bluetooth
+### 9. Wireless and Bluetooth
 
 #### Intel AC7260
 Users with Intel AC7260 cards can enjoy out of the box support for both Wireless and Bluetooth.
@@ -175,17 +175,17 @@ This is the native Apple Wireless and Bluetooth card that can be found on MacBoo
 In order to fit this one you will have to buy the NGFF adapter and the extending cable module.
 There is not enough room to fit the full height so you will be required to place it somewhere else.
 
-#### 11. Country Code for Wireless Cards
+#### 10. Country Code for Wireless Cards
 Some countries have different 5GHz bands and may not be supported for some, the default one is set as US.
 You can specify other country codes like: **US**, **CN**, **#a**, etc by going into:
 - `EFI/OC/Config.plist > DeviceProperties > Add > PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)` and rename/uncomment:
 - `#country-code` to `country-code` and set the desired value (**#a** is the preset value, replace with the country code that you need)
 
-#### 12. Installed and unmounted 
+#### 11. Installed and unmounted 
 after you've installed macos on your thinkintosh, you might notice that if you try to restart without having your usb connected your system wont boot. 
 To solve this you need to mount your EFI patition to your desktop so system can boot automatically.
 
-#### 13. [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
+#### 12. [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
 - After opening the command line tool, Press A to be able mount the EFI partition from your main drive that you installed macOS on.
 - Next enter your password to continue and press enter.
 - Then EFI partition should be `disk0s1`
