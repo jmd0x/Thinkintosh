@@ -83,6 +83,7 @@ In order to fix this problem we need to patch `Display-EDID`.
 
 ### 7. [ProperTree](https://github.com/corpnewt/ProperTree)
 what is ProperTree? Propertree is a cross-platform GUI plist editor written using Python and Tkinter.
+To make changes to your `config.plist` this program will be what you'll have to use.
 
 ### 8. Non TouchScreen Displays
 If your Lenovo Thinkpad T440S doesn't have a TouchScreen display, it is required for you to disable the kext responsible for TouchScreen.
