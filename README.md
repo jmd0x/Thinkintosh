@@ -34,10 +34,10 @@ These are the recommended settings to have everything working properly:
 
 First download [Rufus](https://rufus.ie/en/), set the BOOT selection as not bootable, set File System as Large FAT32, click Start, and delete all file autorun in USB Drive partition.
 
-- `Next, go to the root of this USB drive and create a folder called com.apple.recovery.boot. Then move the downloaded BaseSystem or RecoveryImage files.`
-- `Please ensure you copy over both the .dmg and .chunklist files to this folder:`
-- `Open up and extract the EFI folder archive you downloaded earlier.`
-- `Copy the folder named, "EFI," to the root of your USB Drive.`
+- Next, go to the root of this USB drive and create a folder called `com.apple.recovery.boot`. Then move the downloaded BaseSystem or RecoveryImage files.
+- Please ensure you copy over both the .dmg and .chunklist files to this folder:
+- Open up and extract the EFI folder archive you downloaded earlier.
+- Copy the folder named, `EFI` to the root of your USB Drive.
 
 ### 4. MacRecovery
 
