@@ -116,6 +116,9 @@ Now enable the `SSDT-TPD.aml` for Touchpad to work with VoodooPS2:
 To have working Keyboard Function Keys (Fn) and Fan reading etc, you need to install the YogaSMCPane and the YogaSMC App.
 YogaSMC.kext is already included in the EFI so when you go to releases tab, you download the **YogaSMC-App-release.dmg**
 
+- [zhen-zen](https://github.com/zhen-zen) `for YogaSMC and BrightnessKeys`
+- [benbender](https://github.com/benbender) `for SSDT-BATX**, Touchscreen Gestures and ACPI refinements`
+
 ### 11. Audio
 ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74 released a Swift version that doesn't require `hda-verb`, `alc-verb` or `CodecCommander` kext. the [ALCPlugFix.zip](https://github.com/jmd0x/thinkintosh/blob/main/Tools/ALCPlugFix.zip) is included in the Tools folder.
 
@@ -187,7 +190,3 @@ To solve this you need to mount your EFI patition to your desktop so system can 
 - Next enter your password to continue and press enter.
 - Then EFI partition should be `disk0s1`
 - Once the EFI partition is mounted copy the folder you have on your USB called EFI and paste it to that partiton that appears on your desktop.
-
-
-- [zhen-zen](https://github.com/zhen-zen) `for YogaSMC and BrightnessKeys`
-- [benbender](https://github.com/benbender) `for SSDT-BATX**, Touchscreen Gestures and ACPI refinements`
