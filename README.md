@@ -183,7 +183,10 @@ after you've installed macos on your thinkintosh, you might notice that if you t
 To solve this you need to mount your EFI patition to your desktop so system can boot automatically.
 
 #### 15. [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
-After running the command line tool, you'll want to mount the EFI partition from your main drive that you installed macOS on and copy the folder you have on your USB called EFI and copy and paste it to that partiton that appears on your desktop.
+- After opening the command line tool, Press A to be able mount the EFI partition from your main drive that you installed macOS on.
+- Next enter your password to continue and press enter.
+- Then EFI partition should be `disk0s1`
+- Once the EFI partition is mounted copy the folder you have on your USB called EFI and paste it to that partiton that appears on your desktop.
 
 
 - [zhen-zen](https://github.com/zhen-zen) `for YogaSMC and BrightnessKeys`
