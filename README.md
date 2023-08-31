@@ -59,20 +59,13 @@ From here, you'll want to open up a Command Prompt and cd into the macrecovery f
 Now run one of the following depending on what version of macOS you want.
 - (Note these scripts rely on [Python](https://www.microsoft.com/en-us/p/python-39/9p7qfqmjrfp7?activetab=pivot:overviewtab) support, please install if you haven't already):
 
-### macOS Mojave (10.14.6)
-`python macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00 download`
-
-### macOS Catalina (10.15.7)
-`python macrecovery.py -b Mac-00BE6ED71E35EB86 -m 00000000000000000 download`
-
-### macOS Big Sur (11.7.9)
-`python macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download`
-
-### macOS Monterey (12.6.8)
-`python macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download`
-
-### macOS Ventura (13.5.1) (Work in progress)
-`python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download`
+|      macOS       |                                                                             |
+| ---------------- | ---------------------------------------------------------------------------- |
+| Mojave (10.14.6) | python macrecovery.py -b Mac-7BA5B2DFE22DDD8C -m 00000000000KXPG00 download |
+| Catalina (10.15.7) | python macrecovery.py -b Mac-00BE6ED71E35EB86 -m 00000000000000000 download |
+| Big Sur (11.7.9) | python macrecovery.py -b Mac-42FD25EABCABB274 -m 00000000000000000 download |
+| Monterey (12.6.8) | python macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download |
+| Ventura (13.5.1) (Work in progress) | python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download |
 
 macOS 12 and above note: As recent macOS versions introduce changes to the USB stack, it is highly advisable that you map your USB ports [USBToolBox](https://github.com/USBToolBox/tool) before installing macOS.This will take some time, however once you're finished you should get either BaseSystem or RecoveryImage files:
 
