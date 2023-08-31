@@ -109,10 +109,13 @@ We'll have to set
 ### 6. Non TouchScreen Displays
 If your Lenovo Thinkpad T440S doesn't have a TouchScreen display, it is required for you to disable the kext responsible for TouchScreen.
 Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
-- `VoodooI2CServices.kext - Enabled = No`
-- `VoodooGPIO.kext - Enabled = No`
-- `VoodooI2C.kext - Enabled = No`
-- `VoodooI2CHID.kext - Enabled = No`
+
+|             Path       |              |
+| ---------------------- | ------------ |
+| VoodooI2CServices.kext | Enabled = No |
+| VoodooGPIO.kext | Enabled = No |
+| VoodooI2C.kext | Enabled = No |
+| VoodooI2CHID.kext | Enabled = No |
 
 ### 7. TouchPad
 Most of the users have probably already upgraded to a T450S Touchpad (the one with Physical Buttons) and this one does work natively, no need to touch anything.
