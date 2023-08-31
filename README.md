@@ -6,6 +6,8 @@ This is a write up on how to hackintosh the Lenovo Thinkpad T440S using OpenCore
 [![macOS](https://img.shields.io/badge/macOS-Ventura_13.2.1-orange)](https://www.apple.com/macos/Ventura/)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.7-blue)](https://github.com/acidanthera/OpenCorePkg)
 
+![repository-open-graph-template new](https://github.com/jmd0x/thinkintosh/blob/main/v90puad6we291.png)
+
 ### Specs:
 | Specifications      | Detail                                      |
 | ------------------- | ------------------------------------------- |
