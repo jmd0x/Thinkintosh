@@ -173,9 +173,9 @@ Users with one of these two cards first need to disable the intel kexts:
 
 |             Path                 |                                 |
 | -------------------------------- | ------------------------------- |
-- `EFI/OC/Config.plist > Kernel > Add > Airportitlwm > Enabled = No`
-- `EFI/OC/Config.plist > Kernel > Add > IntelBluetoothInjector > Enabled = No`
-- `EFI/OC/Config.plist > Kernel > Add > IntelBluetoothFirmware > Enabled = No`
+| EFI/OC/Config.plist > Kernel > Add > Airportitlwm | Enabled = No |
+| EFI/OC/Config.plist > Kernel > Add > IntelBluetoothInjector | Enabled = No |
+| EFI/OC/Config.plist > Kernel > Add > IntelBluetoothFirmware | Enabled = No |
 
 Then enable the corresponding kexts for those two cards:
 
