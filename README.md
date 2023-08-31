@@ -101,6 +101,7 @@ Next, let's open GenSMBIOS and edit our config.plist:
 Let's set a Serial Number to our config.plist. 
 `Config.plist > PlatformInfo > Generic SystemSerialNumber`
 - Open GenSMBIOS.bat
+  
 | Press   |        Options           | 
 | ------- | ------------------------ |
 |   1     | Install/Update MacSerial |
