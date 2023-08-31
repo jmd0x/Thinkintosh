@@ -34,6 +34,18 @@ These are the recommended settings to have everything working properly:
 |Anti-Theft > Intel (R) AT Module Activation | Disabled |
 | Anti-Theft > Computrace > Computrace Module Activation | Disabled |
 
+### Tools
+Tools included are:
+- ALCPlugFix.zip
+- Command-Line-EFI-Mounter.zip
+- GenSMBIOS.zip
+- OpenCore-0.9.4.zip
+- ProperTree.zip
+- USBToolBox.zip
+- YogaSMC.dmg
+- Rufus.exe
+
+
 ### What doesn't work:
 - `DRM content`
 - `FingerPrint Reader`
