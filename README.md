@@ -132,7 +132,7 @@ Once done, enable the VoodooPS2Controller kexts for Touchpad:
 |             Path                 |                                 |
 | -------------------------------- | ------------------------------- |
 | VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext | Enabled = Yes |
-| VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext - Enabled = Yes |
+| VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext | Enabled = Yes |
 | VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext | Enabled = Yes |
 
 Now enable the `SSDT-TPD.aml` for Touchpad to work with VoodooPS2:  
