@@ -71,7 +71,7 @@ Now run one of the following depending on what version of macOS you want.
 ### macOS Monterey (12.6.8)
 `python macrecovery.py -b Mac-E43C1C25D4880AD6 -m 00000000000000000 download`
 
-### macOS Ventura (13.0.0) (Work in progress)
+### macOS Ventura (13.5.1) (Work in progress)
 `python3 macrecovery.py -b Mac-4B682C642B45593E -m 00000000000000000 download`
 
 macOS 12 and above note: As recent macOS versions introduce changes to the USB stack, it is highly advisable that you map your USB ports [USBToolBox](https://github.com/USBToolBox/tool) before installing macOS.This will take some time, however once you're finished you should get either BaseSystem or RecoveryImage files:
