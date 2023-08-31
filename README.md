@@ -102,7 +102,7 @@ Let's set a Serial Number to our config.plist.
 `Config.plist > PlatformInfo > Generic SystemSerialNumber`
 - Open GenSMBIOS.bat
 | Press   |        Options           | 
-|---------|--------------------------|
+| ------- | ------------------------ |
 |   1     | Install/Update MacSerial |
 |   2     | select your config.plist |
 |   3     | Generate SMBIOS          |
