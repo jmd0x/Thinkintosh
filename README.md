@@ -85,7 +85,7 @@ In order to fix this problem we need to patch `Display-EDID`.
 what is ProperTree? Propertree is a cross-platform GUI plist editor written using Python and Tkinter.
 To make changes to your `config.plist` this program will be what you'll have to use.
 
-Lets grab a copy of [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+### 5. Lets grab a copy of [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
 For generating our SMBIOS data
 Next, let's open ProperTree and edit our config.plist:
 
@@ -105,7 +105,7 @@ Let's set a Serial Number to our config.plist.
 Once ProperTree is running, open your config.plist by pressing Ctrl + O and selecting the config.plist file on your USB.
 We'll have to set 
 
-### 5. Non TouchScreen Displays
+### 6. Non TouchScreen Displays
 If your Lenovo Thinkpad T440S doesn't have a TouchScreen display, it is required for you to disable the kext responsible for TouchScreen.
 Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
 - `VoodooI2CServices.kext - Enabled = No`
@@ -113,7 +113,7 @@ Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
 - `VoodooI2C.kext - Enabled = No`
 - `VoodooI2CHID.kext - Enabled = No`
 
-### 6. TouchPad
+### 7. TouchPad
 Most of the users have probably already upgraded to a T450S Touchpad (the one with Physical Buttons) and this one does work natively, no need to touch anything.
 For you users that have the standard Touchpad that came with this laptop, you have to do some changes as VoodooRMI doesn't seem to work very well with them.
 
@@ -132,14 +132,14 @@ Once done, enable the VoodooPS2Controller kexts for Touchpad:
 Now enable the `SSDT-TPD.aml` for Touchpad to work with VoodooPS2:  
 - `EFI/OC/Config.plist > ACPI > Add > SSDT-TPD.aml > Enabled = Yes`
 
-### 7. [YogaSMC](https://github.com/zhen-zen/YogaSMC)
+### 8. [YogaSMC](https://github.com/zhen-zen/YogaSMC)
 To have working Keyboard Function Keys (Fn) and Fan reading etc, you need to install the YogaSMCPane and the YogaSMC App.
 YogaSMC.kext is already included in the EFI so when you go to releases tab, you download the **YogaSMC-App-release.dmg**
 
 - [zhen-zen](https://github.com/zhen-zen) `for YogaSMC and BrightnessKeys`
 - [benbender](https://github.com/benbender) `for SSDT-BATX**, Touchscreen Gestures and ACPI refinements`
 
-### 8. Audio
+### 9. Audio
 ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74 released a Swift version that doesn't require `hda-verb`, `alc-verb` or `CodecCommander` kext. the [ALCPlugFix.zip](https://github.com/jmd0x/thinkintosh/blob/main/Tools/ALCPlugFix.zip) is included in the Tools folder.
 
 **Installation**:
@@ -156,7 +156,7 @@ ALCPlugFIx is required to fix static noise on headphones, however Black-Dragon74
 - Drag the `ALC3232.plist` from the `/usr/local/bin` folder into the terminal window and press enter.
 - Done
 
-### 9. Wireless and Bluetooth
+### 10. Wireless and Bluetooth
 
 #### Intel AC7260
 Users with Intel AC7260 cards can enjoy out of the box support for both Wireless and Bluetooth.
@@ -195,17 +195,17 @@ This is the native Apple Wireless and Bluetooth card that can be found on MacBoo
 In order to fit this one you will have to buy the NGFF adapter and the extending cable module.
 There is not enough room to fit the full height so you will be required to place it somewhere else.
 
-#### 10. Country Code for Wireless Cards
+#### 11. Country Code for Wireless Cards
 Some countries have different 5GHz bands and may not be supported for some, the default one is set as US.
 You can specify other country codes like: **US**, **CN**, **#a**, etc by going into:
 - `EFI/OC/Config.plist > DeviceProperties > Add > PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)` and rename/uncomment:
 - `#country-code` to `country-code` and set the desired value (**#a** is the preset value, replace with the country code that you need)
 
-#### 11. Installed and unmounted 
+#### 12. Installed and unmounted 
 after you've installed macos on your thinkintosh, you might notice that if you try to restart without having your usb connected your system wont boot. 
 To solve this you need to mount your EFI patition to your desktop so system can boot automatically.
 
-#### 12. [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
+#### 13. [Command Line EFI Mounter](https://github.com/chris1111/Command-Line-EFI-Mounter)
 - After opening the command line tool, Press A to be able mount the EFI partition from your main drive that you installed macOS on.
 - Next enter your password to continue and press enter.
 - Then EFI partition should be `disk0s1`
