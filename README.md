@@ -2,8 +2,8 @@
 This is a write up on how to hackintosh the Lenovo Thinkpad T440s using OpenCore Bootloader
 
 [![macOS](https://img.shields.io/badge/macOS-Big_Sur_11.7.9-red)](https://www.apple.com/macos/big-sur/)
-[![macOS](https://img.shields.io/badge/macOS-Monterey_12.6.8-yellow)](https://www.apple.com/macos/monterey/)
 [![macOS](https://img.shields.io/badge/macOS-Ventura_13.5.1-orange)](https://www.apple.com/macos/Ventura/)
+[![macOS](https://img.shields.io/badge/macOS-Monterey_12.6.8-yellow)](https://www.apple.com/macos/monterey/)
 [![OpenCore](https://img.shields.io/badge/OpenCore-0.6.7-blue)](https://github.com/acidanthera/OpenCorePkg)
 
 ![repository-open-graph-template new](https://github.com/jmd0x/thinkintosh/blob/main/v90puad6we291.png)
