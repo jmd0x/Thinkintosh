@@ -101,11 +101,13 @@ Next, let's open GenSMBIOS and edit our config.plist:
 Let's set a Serial Number to our config.plist. 
 `Config.plist > PlatformInfo > Generic SystemSerialNumber`
 - Open GenSMBIOS.bat
-- Press 1 to Install/Update MacSerial
-- Press 2 to select your config.plist
-- Press 3 to Generate SMBIOS
-- Press 4 to Generate UUID
-- Press 5 to Generate ROM
+| Press   |        Options           | 
+|---------|--------------------------|
+|   1     | Install/Update MacSerial |
+|   2     | select your config.plist |
+|   3     | Generate SMBIOS          |
+|   4     | Generate UUID            |
+|   5     | Generate ROM             |
 
 Once ProperTree is running, open your config.plist by pressing Ctrl + O and selecting the config.plist file on your USB.
 We'll have to set 
