@@ -85,9 +85,9 @@ In order to fix this problem we need to patch `Display-EDID`.
 what is ProperTree? Propertree is a cross-platform GUI plist editor written using Python and Tkinter.
 To make changes to your `config.plist` this program will be what you'll have to use.
 
-### 5. Lets grab a copy of [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
-For generating our SMBIOS data
-Next, let's open ProperTree and edit our config.plist:
+### 5. [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+Let's grab a copy so we can generate our SMBIOS data.
+Next, let's open GenSMBIOS and edit our config.plist:
 
 | Operating System | File |
 | ---------------- | --------|
