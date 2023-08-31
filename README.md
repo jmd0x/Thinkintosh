@@ -85,6 +85,24 @@ In order to fix this problem we need to patch `Display-EDID`.
 what is ProperTree? Propertree is a cross-platform GUI plist editor written using Python and Tkinter.
 To make changes to your `config.plist` this program will be what you'll have to use.
 
+Lets grab a copy of [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
+For generating our SMBIOS data
+Next, let's open ProperTree and edit our config.plist:
+
+| Windows | GenSMBIOS.bat |
+| macOS | GenSMBIOS.command |
+
+Let's set a Serial Number to our config.plist. 
+- Open GenSMBIOS.bat
+- Press 1 to Install/Update MacSerial
+- Press 2 to select your config.plist
+- Press 3 to Generate SMBIOS
+- Press 4 to Generate UUID
+- Press 5 to Generate ROM
+
+Once ProperTree is running, open your config.plist by pressing Ctrl + O and selecting the config.plist file on your USB.
+We'll have to set 
+
 ### 5. Non TouchScreen Displays
 If your Lenovo Thinkpad T440S doesn't have a TouchScreen display, it is required for you to disable the kext responsible for TouchScreen.
 Go to `EFI/OC/Config.plist > Kernel > Add >` and disable the 4 following kexts:
