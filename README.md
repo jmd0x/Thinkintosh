@@ -90,6 +90,7 @@ For generating our SMBIOS data
 Next, let's open ProperTree and edit our config.plist:
 
 | Operating System | File |
+| ---------------- | --------|
 | Windows | GenSMBIOS.bat |
 | macOS | GenSMBIOS.command |
 
