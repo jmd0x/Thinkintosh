@@ -1,5 +1,5 @@
 # Thinkintosh
-This is a write up on how to hackintosh the Lenovo Thinkpad T440S using OpenCore Bootloader
+This is a write up on how to hackintosh the Lenovo Thinkpad T440s using OpenCore Bootloader
 
 [![macOS](https://img.shields.io/badge/macOS-Big_Sur_11.7.9-red)](https://www.apple.com/macos/big-sur/)
 [![macOS](https://img.shields.io/badge/macOS-Monterey_12.6.8-green)](https://www.apple.com/macos/monterey/)
