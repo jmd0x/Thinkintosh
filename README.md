@@ -119,16 +119,21 @@ Most of the users have probably already upgraded to a T450S Touchpad (the one wi
 For you users that have the standard Touchpad that came with this laptop, you have to do some changes as VoodooRMI doesn't seem to work very well with them.
 
 Go to `EFI/OC/Config.plist > Kernel > Add` and disable the VoodooRMI kexts:
-- `VoodooRMI.kext - Enabled = No`
-- `VoodooRMI.kext/Contents/PlugIns/RMISMBus.kext - Enabled = No`
-- `VoodooRMI.kext/Contents/PlugIns/VoodooTrackpoint.kext - Enabled = No`
-- `VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext - Enabled = No`
+
+|             Path                 |                                 |
+| -------------------------------- | ------------------------------- |
+| VoodooRMI.kext | Enabled = No |
+| VoodooRMI.kext/Contents/PlugIns/RMISMBus.kext | Enabled = No |
+| VoodooRMI.kext/Contents/PlugIns/VoodooTrackpoint.kext | Enabled = No |
+| VoodooRMI.kext/Contents/PlugIns/VoodooInput.kext | Enabled = No |
 
 Once done, enable the VoodooPS2Controller kexts for Touchpad:
 
-- `VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext - Enabled = Yes`
-- `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext - Enabled = Yes`
-- `VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext - Enabled = Yes`
+|             Path                 |                                 |
+| -------------------------------- | ------------------------------- |
+| VoodooPS2Controller.kext/Contents/PlugIns/VoodooInput.kext | Enabled = Yes |
+| VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Trackpad.kext - Enabled = Yes |
+| VoodooPS2Controller.kext/Contents/PlugIns/VoodooPS2Mouse.kext | Enabled = Yes |
 
 Now enable the `SSDT-TPD.aml` for Touchpad to work with VoodooPS2:  
 - `EFI/OC/Config.plist > ACPI > Add > SSDT-TPD.aml > Enabled = Yes`
@@ -166,21 +171,28 @@ Keep in mind that Airportitlwm/itlwm is still in early development and only `N` 
 #### DW1560 & DW1830
 Users with one of these two cards first need to disable the intel kexts:
 
+|             Path                 |                                 |
+| -------------------------------- | ------------------------------- |
 - `EFI/OC/Config.plist > Kernel > Add > Airportitlwm > Enabled = No`
 - `EFI/OC/Config.plist > Kernel > Add > IntelBluetoothInjector > Enabled = No`
 - `EFI/OC/Config.plist > Kernel > Add > IntelBluetoothFirmware > Enabled = No`
 
 Then enable the corresponding kexts for those two cards:
 
-- `EFI/OC/Config.plist > Kernel > Add > AirportBrcmFixup > Enabled = Yes`
-- `EFI/OC/Config.plist > Kernel > Add > AirPortBrcm4360_Injector > Enabled = Yes`
-- `EFI/OC/Config.plist > Kernel > Add > BrcmBluetoothInjector > Enabled = Yes`
-- `EFI/OC/Config.plist > Kernel > Add > BrcmFirmwareData > Enabled = Yes`
-- `EFI/OC/Config.plist > Kernel > Add > BrcmPatchRAM3 > Enabled = Yes`
+|             Path                 |                                 |
+| -------------------------------- | ------------------------------- |
+| EFI/OC/Config.plist > Kernel > Add > AirportBrcmFixup | Enabled = Yes |
+| EFI/OC/Config.plist > Kernel > Add > AirPortBrcm4360_Injector | Enabled = Yes |
+| EFI/OC/Config.plist > Kernel > Add > BrcmBluetoothInjector | Enabled = Yes |
+| EFI/OC/Config.plist > Kernel > Add > BrcmFirmwareData | Enabled = Yes |
+| EFI/OC/Config.plist > Kernel > Add > BrcmPatchRAM3 | Enabled = Yes |
 
 #### DW1820A
 This card uses the same kexts as DW1560, DW1830 but needs this additional injector:
-- `EFI/OC/Config.plist > Kernel > Add > AirPortBrcmNIC_Injector > Enabled = Yes`
+
+|             Path                 |                                 |
+| -------------------------------- | ------------------------------- |
+| EFI/OC/Config.plist > Kernel > Add > AirPortBrcmNIC_Injector | Enabled = Yes |
 
 We also need to disable `pci-aspm-default` to fix system freezes caused from this card:
 Go into `EFI/OC/Config.plist > DeviceProperties >` and rename / uncomment:
