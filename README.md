@@ -79,7 +79,7 @@ Users with upgraded displays to `1080p` or native `1080p` displays will have gar
 In order to fix this problem we need to patch `Display-EDID`.
 
 ### 4. [ProperTree](https://github.com/corpnewt/ProperTree)
-what is ProperTree? Propertree is a cross-platform GUI plist editor written using Python and Tkinter.
+what is ProperTree? Propertree is a cross-platform GUI plist editor.
 To make changes to your `config.plist` this program will be what you'll have to use.
 
 ### 5. [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
